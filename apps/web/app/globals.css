@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root { --bg: 15 24 32; --surface: 24 37 51; --line: 42 58 76; --ink: 232 238 244; --muted: 143 163 181; --marquee: 242 201 76; --onmarquee: 20 16 4; --reason: 111 211 194; color-scheme: dark; }
+:root.light { --bg: 238 242 246; --surface: 255 255 255; --line: 208 217 226; --ink: 16 28 40; --muted: 84 102 120; --marquee: 232 178 30; --onmarquee: 20 16 4; --reason: 12 112 100; color-scheme: light; }
+body { background: rgb(var(--bg)); color: rgb(var(--ink)); }
+:focus-visible { outline: 2px solid rgb(var(--marquee)); outline-offset: 2px; border-radius: 6px; }
+.rail { scrollbar-width: none; } .rail::-webkit-scrollbar { display: none; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
